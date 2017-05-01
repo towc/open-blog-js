@@ -1,0 +1,33 @@
+{
+  "name": "open-blog-js",
+  "version": "1.0.0",
+  "description": "fully open-source blog with javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib/*; cp -rf src lib; find lib/ -name \"*.js\" -type f -delete; webpack",
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/towc/open-blog-js.git"
+  },
+  "author": "towc <matei@copot.eu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/towc/open-blog-js/issues"
+  },
+  "homepage": "https://github.com/towc/open-blog-js#readme",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "maptor-consumer": "^1.1.1",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "webpack": "^2.4.1"
+  }
+}
